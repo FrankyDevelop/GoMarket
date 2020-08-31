@@ -1,0 +1,8 @@
+{
+  "name": "GoMarket",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
