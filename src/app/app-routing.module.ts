@@ -16,10 +16,6 @@ const routes: Routes = [
     loadChildren: () => import('./components/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'perfil-cliente',
-    loadChildren: () => import('./perfil-cliente/perfil-cliente.module').then( m => m.PerfilClientePageModule)
-  },
-  {
     path: 'tab-productos',
     loadChildren: () => import('./productos/tab-productos/tab-productos.module').then( m => m.TabProductosPageModule)
   },
@@ -34,6 +30,14 @@ const routes: Routes = [
   {
     path: 'tab-perfil',
     loadChildren: () => import('./perfil/tab-perfil/tab-perfil.module').then( m => m.TabPerfilPageModule)
+  },
+  {
+    path: 'puestos',
+    loadChildren: () => import('./productos/puestos/puestos.module').then( m => m.PuestosPageModule)
+  },
+  {
+    path: 'tab-categoria',
+    loadChildren: () => import('./productos/tab-categoria/tab-categoria.module').then( m => m.TabCategoriaPageModule)
   }
 ];
 @NgModule({

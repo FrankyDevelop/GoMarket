@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PerfilClientePageRoutingModule } from './perfil-cliente-routing.module';
+import { TabCategoriaPageRoutingModule } from './tab-categoria-routing.module';
 
-import { PerfilClientePage } from './perfil-cliente.page';
+import { TabCategoriaPage } from './tab-categoria.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PerfilClientePageRoutingModule
+    TabCategoriaPageRoutingModule
   ],
-  declarations: [PerfilClientePage]
+  declarations: [TabCategoriaPage]
 })
-export class PerfilClientePageModule {}
+export class TabCategoriaPageModule {}

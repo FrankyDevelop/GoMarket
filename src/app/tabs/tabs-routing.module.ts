@@ -8,8 +8,8 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'tab-categoria',
+        loadChildren: () => import('../productos/tab-categoria/tab-categoria.module').then(m => m.TabCategoriaPageModule)
       },
       {
         path: 'tab-reservas',
@@ -20,19 +20,19 @@ const routes: Routes = [
         loadChildren: () => import('../presupuesto/tab-presupuesto/tab-presupuesto.module').then( m => m.TabPresupuestoPageModule)
       },
       {
-        path: 'perfil-cliente',
-        loadChildren: () => import('../perfil-cliente/perfil-cliente.module').then(m => m.PerfilClientePageModule)
+        path: 'tab-perfil',
+        loadChildren: () => import('../perfil/tab-perfil/tab-perfil.module').then(m => m.TabPerfilPageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/tab-categoria',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/tab-categoria',
     pathMatch: 'full'
   }
 ];
